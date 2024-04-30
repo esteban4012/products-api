@@ -1,8 +1,8 @@
 from django.db import models
 
 class Product(models.Model):
-    name = models.CharField(maxlength=50)
-    description = models.CharField(maxlength=50)
-    price = models.IntegerField()
-    enable = models.BooleanField(default = True)
-    
+    name = models.CharField(max_length=100)
+    description = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    enabled = models.BooleanField(default=True)
+
