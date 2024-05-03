@@ -1,4 +1,5 @@
 from django.db import models
+from api.clients.models import Clients
 
 
 class Product(models.Model):
@@ -8,4 +9,5 @@ class Product(models.Model):
     enabled = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add = True)
     updated = models.DateTimeField(auto_now = True)
+    client = models.ForeignKey(Clients, on_delete=models.CASCADE, null=True)
 
