@@ -7,3 +7,5 @@ class Clients(models.Model):
     phone = models.BigIntegerField()
     email = models.EmailField()
 
+    def __str__(self) -> str:
+        return self.name

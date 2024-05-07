@@ -11,3 +11,5 @@ class Product(models.Model):
     updated = models.DateTimeField(auto_now = True)
     client = models.ForeignKey(Clients, on_delete=models.CASCADE, null=True)
 
+    
+
