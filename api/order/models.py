@@ -7,5 +7,4 @@ class Order(models.Model):
     Product_order = models.ForeignKey(Product, on_delete=models.CASCADE)
     date_published = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self) -> str:
-        f'{self.client_order.name}', {self.Product_order.name}
+   
