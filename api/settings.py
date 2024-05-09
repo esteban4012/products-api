@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'api-rest',
         'USER': 'postgres',
         'PASSWORD': 'docker',
-        'HOST': '127.0.0.1',
+        'HOST': 'base-datos',
         'PORT': '5432'
     }
 }
